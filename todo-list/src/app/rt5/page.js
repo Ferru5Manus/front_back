@@ -1,9 +1,9 @@
 'use client'
 import Image from "next/image";
 import "./index_style.css";
-import Todo from "@/app/Todo";
+import Todo from "@/app/rt5/Todo";
 import React from "react";
-import App from "@/app/App";
+import App from "@/app/rt5/App";
 import ReactDOM from "react-dom/client"
 
 const DATA = [

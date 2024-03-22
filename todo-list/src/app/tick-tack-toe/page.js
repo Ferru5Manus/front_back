@@ -91,7 +91,7 @@ export default function TicTacToe() {
 
     const Square = ({index, value}) => {
         return (
-            <>
+            <div>
                 <div className={"bg-gray-200 border-2 border-gray-400 rounded hover:bg-gray-300 flex items-center justify-center h-24 w-24"}>
                     <button
                         className={"w-full h-full text-center text-5xl font-bold"}
@@ -100,18 +100,18 @@ export default function TicTacToe() {
                         {value}
                     </button>
                 </div>
-            </>
+            </div>
         )
     }
 
     const History = () => {
         if (!history.boards) {
             return (
-                <></>
+                <div></div>
             )
         }
         return (
-            <>
+            <div>
                 <div className={"flex flex-col gap-2 justify-center items-center"}>
                     История ходов:
                     {
@@ -127,13 +127,13 @@ export default function TicTacToe() {
                         ))
                     }
                 </div>
-            </>
+            </div>
         )
     }
 
     const PlayField = () => {
         return (
-            <>
+            <div>
                 <div className={""}>
                     <div className={"grid grid-cols-3 grid-rows-3 border-2 border-gray-400 rounded justify-items-center"}>
                         {
@@ -143,12 +143,12 @@ export default function TicTacToe() {
                         }
                     </div>
                 </div>
-            </>
+            </div>
         )
     }
 
     return (
-        <>
+        <div>
             <div className="flex flex-col gap-2 justify-center items-center">
                 <p className={"w-full text-center text-3xl"}>Крестики нолики</p>
                 <br />
@@ -188,6 +188,6 @@ export default function TicTacToe() {
                         </button>
                 }
             </div>
-        </>
+        </div>
     )
 }

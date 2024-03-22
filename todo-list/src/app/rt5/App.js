@@ -1,7 +1,7 @@
-import Todo from "@/app/Todo";
+import Todo from "@/app/rt5/Todo";
 import {comment} from "postcss";
-import Form from "@/app/Form";
-import FilterButton from "@/app/FilterButton";
+import Form from "@/app/rt5/Form";
+import FilterButton from "@/app/rt5/FilterButton";
 import React, { useState } from "react";
 import {nanoid} from "nanoid";
 
